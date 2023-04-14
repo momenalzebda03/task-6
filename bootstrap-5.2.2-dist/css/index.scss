@@ -1,0 +1,204 @@
+@use "../../folder\ var/color" as *;
+
+body {
+    text-transform: capitalize;
+}
+
+// start evre
+.a_backgound {
+    background-color: $color_orange1;
+}
+
+.button-arounder {
+    transition: 0.3s;
+}
+
+.button-arounder:hover {
+    transform: translate(0px, 10px);
+}
+
+// end evre
+
+/* start navbar */
+
+.image_width {
+    width: 140px;
+}
+
+body section nav {
+    height: 80px;
+}
+
+body section nav .container .span_color {
+    color: $color_orange1;
+}
+
+body section nav .container .collapse ul li a .image_my {
+    width: 50px;
+    top: 14px;
+}
+
+body section nav .container .collapse ul li .active,
+body section nav .container .collapse ul li .active_hover:hover {
+    background-color: $color_orange1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section nav .collapse ul li .a_backgound:hover {
+    background-color: red;
+}
+
+/* end navbar */
+// start header
+body section .container .div_main {
+    height: 620px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body section .container .div_main div .h1_size {
+    font-size: 80px;
+}
+
+body section .container .div_main div .p_style {
+    background-color: $color_orange1;
+}
+
+body section .container .div_main div .p_style:after {
+    content: '';
+    position: absolute;
+    margin-top: 39px;
+    margin-left: -55px;
+    border-top: 15px solid $color_orange1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+body section div .div_image {
+    background-image: url("../../images/image\ header/man-wearing-black-bow-tie-2330079.png");
+    width: 60%;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+}
+
+body section div .div_image .image_margin {
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 90px;
+}
+
+body section a .icon_arrow {
+    margin-top: -60px;
+    transition: 0.4s;
+    border: 2px solid $color_orange1;
+}
+
+body section a .icon_arrow:hover {
+    background-color: $color_orange1;
+}
+
+// end header
+// start about
+body section .container .row div .div_image_about {
+    background-image: url("../../images/image about/shutterstock_407505481.png");
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+body section .container .row div .div_image_about .div_white {
+    background: -webkit-linear-gradient(142deg, rgba(55, 55, 55, 0.359), rgb(255, 255, 255));
+    background: linear-gradient(142deg, rgba(55, 55, 55, 0.412), rgb(255, 255, 255));
+    height: 600px;
+    z-index: 1;
+}
+
+body section .container .row div .div_image_about .div_white .div_backgorund {
+    background-color: #111111;
+    margin-left: -30px;
+    transform: translate(0px, 30px);
+}
+
+body section .container .row div .div_image_about .div_white .div_backgorund .div_hr {
+    width: 10px;
+    height: 20px;
+}
+
+body section .container .row div div .div_about {
+    background-color: #707070;
+    height: 4px;
+    width: 75%;
+}
+
+body section .container .row div div .div_about .div_hr_about {
+    background: -webkit-linear-gradient(71deg, rgb(255, 73, 0), rgb(255, 191, 13));
+    background: linear-gradient(71deg, rgb(255, 73, 0), rgb(255, 191, 13));
+    height: 4px;
+}
+
+// end about
+// start our
+body section div .div_our_hr {
+    border: 2px dotted $color_myor;
+    height: 50px;
+}
+
+body section div .container .row div .div_our_backgounrd {
+    cursor: pointer;
+    background-color: #111111;
+    transition: 0.5s;
+}
+
+body section div .container .row div .div_our_backgounrd:hover {
+    background-color: $color_myor;
+}
+
+body section div .container .row div div div .icon_color {
+    color: $color_myor;
+}
+
+body section div .container .row div .div_our_backgounrd:hover .icon_color {
+    color: white;
+}
+
+body section div .container .row div div div .icon_left {
+    background-color: black;
+    transition: 0.5s;
+}
+
+body section div .container .row div .div_our_backgounrd:hover .icon_left {
+    background-color: white;
+    color: black;
+}
+
+// end our
+// start media
+@media (max-width: 991px) and (min-width: 0px) {
+
+    body section div .div_image,
+    body section .container .row div div .div_about {
+        width: 100%;
+    }
+
+    body section nav {
+        height: auto;
+    }
+
+    body section nav .container .collapse ul li .active,
+    body section nav .container .collapse ul li .active_hover:hover {
+        background-color: transparent;
+        padding-top: 8.5px;
+        padding-bottom: 8px;
+    }
+
+    body section .container .div_main div .h1_size {
+        font-size: 40px;
+    }
+
+    body section .container .row div .div_image_about .div_white .div_backgorund {
+        margin-left: 0px;
+    }
+}
+
+// end media
