@@ -14,8 +14,34 @@ body {
   transform: translate(0px, 10px);
 }
 
+.a_backgound:hover {
+  background-color: red;
+}
+
+.div_image {
+  background-size: cover;
+  background-position: center center;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #FF4900;
+}
+
+.a_hover {
+  border-top: 0px;
+  border-radius: 0px;
+  border-left: 0px;
+  color: #FFFFFF;
+}
+
+.a_hover:hover {
+  color: #FF4900;
+  border-bottom: 2px solid #FF4900;
+}
+
 /* start navbar */
-.image_width {
+body section .navbar .container .image_width {
   width: 140px;
 }
 
@@ -37,10 +63,6 @@ body section nav .container .collapse ul li .active_hover:hover {
   background-color: #FF4900;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-section nav .collapse ul li .a_backgound:hover {
-  background-color: red;
 }
 
 /* end navbar */
@@ -67,14 +89,6 @@ body section .container .div_main div .p_style:after {
   border-right: 10px solid transparent;
 }
 
-body section div .div_image {
-  background-image: url("../../images/image header/man-wearing-black-bow-tie-2330079.png");
-  width: 60%;
-  height: 800px;
-  background-size: cover;
-  background-position: center center;
-}
-
 body section div .div_image .image_margin {
   width: 60%;
   margin-left: 18%;
@@ -91,26 +105,30 @@ body section a .icon_arrow:hover {
   background-color: #FF4900;
 }
 
-body section .container .row div .div_image_about {
-  background-image: url("../../images/image about/shutterstock_407505481.png");
-  height: 600px;
-  background-size: cover;
-  background-position: center center;
+body section div .image1 {
+  background-image: url("../../images/image header/man-wearing-black-bow-tie-2330079.png");
+  width: 60%;
+  height: 800px;
 }
 
-body section .container .row div .div_image_about .div_white {
+body section .container .row div .image2 {
+  background-image: url("../../images/image about/shutterstock_407505481.png");
+  height: 700px;
+}
+
+body section .container .row div .image2 .div_white {
   background: linear-gradient(142deg, rgba(55, 55, 55, 0.412), rgb(255, 255, 255));
-  height: 600px;
+  height: 700px;
   z-index: 1;
 }
 
-body section .container .row div .div_image_about .div_white .div_backgorund {
+body section .container .row div .image2 .div_white .div_backgorund {
   background-color: #111111;
   margin-left: -30px;
   transform: translate(0px, 30px);
 }
 
-body section .container .row div .div_image_about .div_white .div_backgorund .div_hr {
+body section .container .row div .image2 .div_white .div_backgorund .div_hr {
   width: 10px;
   height: 20px;
 }
@@ -127,7 +145,7 @@ body section .container .row div div .div_about .div_hr_about {
 }
 
 body section div .div_our_hr {
-  border: 2px dotted orangered;
+  border: 2px dashed orangered;
   height: 50px;
 }
 
@@ -146,7 +164,7 @@ body section div .container .row div div div .icon_color {
 }
 
 body section div .container .row div .div_our_backgounrd:hover .icon_color {
-  color: white;
+  color: #FFFFFF;
 }
 
 body section div .container .row div div div .icon_left {
@@ -155,8 +173,258 @@ body section div .container .row div div div .icon_left {
 }
 
 body section div .container .row div .div_our_backgounrd:hover .icon_left {
-  background-color: white;
+  background-color: #FFFFFF;
   color: black;
+}
+
+body section .image3 {
+  background-image: url("../../images/image numbers/shutterstock_696061426.png");
+  height: 600px;
+}
+
+body section .div_black {
+  background-color: rgba(0, 0, 0, 0.936);
+  height: 600px;
+}
+
+body section .div_black .container .row div div .div_border {
+  background-color: #111111;
+  border: 2px dashed rgba(204, 204, 204, 0.4156862745);
+  transition: 0.5s;
+}
+
+body section .div_black .container .row div div .div_border:hover {
+  background-color: #FF4900;
+}
+
+body section .section_image div .navbar .container .collapse ul li .active1 {
+  color: #FF4900;
+  border-bottom: 2px solid #FF4900;
+}
+
+body section .section_image div div div .container .row .card__collection body section .section_image div div div .container .row .cards {
+  background-position: center;
+}
+body section .section_image div div div .container .row .card__collection .cards--two p {
+  top: 83%;
+  left: -100%;
+  z-index: 8;
+  transition: all 0.6s ease;
+}
+body section .section_image div div div .container .row .card__collection .cards--two:hover p {
+  left: 8%;
+}
+body section .section_image div div div .container .row .card__collection .cards--two:hover .cards--two__rect {
+  top: 75%;
+}
+body section .section_image div div div .container .row .card__collection .cards--two:hover .cards--two__rect:before {
+  transform: translateY(15px);
+}
+body section .section_image div div div .container .row .card__collection .cards--two:hover .cards--two__tri {
+  right: -40%;
+}
+body section .section_image div div div .container .row .card__collection .cards--two:hover .cards--two__tri:before {
+  right: -312px;
+}
+body section .section_image div div div .container .row .card__collection .cards--two__tri {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #fff;
+  opacity: 0.9;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+}
+body section .section_image div div div .container .row .card__collection .cards--two__tri:before {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #57ccfd;
+  position: absolute;
+  content: "";
+  display: block;
+  top: -220px;
+  right: -612px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+body section .section_image div div div .container .row .card__collection .cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 5;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+body section .section_image div div div .container .row .card__collection .cards--two__rect:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #f07306;
+  transform: translateY(200px);
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three {
+  position: relative;
+  z-index: 10;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-1 {
+  left: 10%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-1 .shadow-1 {
+  left: -20%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-2 {
+  left: 60%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-2:before {
+  left: -100%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-2:after {
+  left: 80%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__rect-2 .shadow-2 {
+  left: -10%;
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__circle {
+  transform: scale(1);
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__circle:before {
+  transform: scale(0.9);
+}
+body section .section_image div div div .container .row .card__collection .cards--three:hover .cards--three__list li {
+  transform: translateX(0);
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-1 {
+  background: #fff;
+  width: 200px;
+  height: 110px;
+  transform: skewX(-20deg);
+  display: block;
+  position: absolute;
+  top: 73%;
+  opacity: 0.9;
+  left: -100%;
+  z-index: 8;
+  transition: all 0.5s ease-in;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-1 p {
+  transform: skewX(20deg);
+  line-height: 6rem;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-1 .shadow-1 {
+  background: #9b1308;
+  width: 230px;
+  height: 100px;
+  left: -200%;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-2 {
+  width: 100px;
+  height: 70px;
+  background: #fff;
+  position: absolute;
+  top: 65%;
+  left: 1000%;
+  opacity: 0.9;
+  transform: skewX(-20deg);
+  z-index: 8;
+  transition: all 0.5s ease-in;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-2::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 40px;
+  background: #57ccfd;
+  opacity: 1;
+  position: absolute;
+  left: 500%;
+  top: 10%;
+  transition: all 0.3s ease-in;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 40px;
+  background: #9b1308;
+  opacity: 1;
+  position: absolute;
+  left: 500%;
+  top: 114%;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.2s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__rect-2 .shadow-2 {
+  background: #57ccfd;
+  width: 100%;
+  height: 100%;
+  top: -10%;
+  left: 500%;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.2s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  opacity: 0.9;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__circle:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #9b1308;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__list {
+  list-style: none;
+  position: absolute;
+  top: -9px;
+  right: 7px;
+  padding-top: 60px;
+  transition: all 0.4s ease;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__list li {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: rgba(87, 204, 253, 0.9);
+  line-height: 1.7rem;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  transform: translateX(500%);
+}
+body section .section_image div div div .container .row .card__collection .cards--three__list li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__list li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+body section .section_image div div div .container .row .card__collection .cards--three__list li:nth-child(3) {
+  transition-delay: 0.4s;
 }
 
 @media (max-width: 991px) and (min-width: 0px) {
