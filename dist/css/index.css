@@ -24,7 +24,8 @@ body {
 }
 
 .nav-link:focus,
-.nav-link:hover {
+.nav-link:hover,
+.p_color {
   color: #FF4900;
 }
 
@@ -425,6 +426,36 @@ body section .section_image div div div .container .row .card__collection .cards
 }
 body section .section_image div div div .container .row .card__collection .cards--three__list li:nth-child(3) {
   transition-delay: 0.4s;
+}
+
+body section div div div .container_top {
+  margin-top: 150px;
+}
+
+body section div div div .container_top .div_color {
+  background-color: #111111;
+}
+
+body section div div div .container div .image_test {
+  width: 150px;
+  margin-top: -80px;
+}
+
+body section div div div .container div div div .text_span {
+  color: #747474;
+  display: block;
+  -webkit-transform: rotate(20deg);
+}
+
+body section div .div_bottom {
+  padding-bottom: 70px;
+}
+
+body section div .carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 12px;
+  border-radius: 30px;
+  background-color: #FF4900;
 }
 
 @media (max-width: 991px) and (min-width: 0px) {
