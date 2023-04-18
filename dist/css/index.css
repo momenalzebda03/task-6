@@ -452,10 +452,23 @@ body section div .div_bottom {
 }
 
 body section div .carousel-indicators [data-bs-target] {
-  width: 30px;
+  width: 50px;
   height: 12px;
-  border-radius: 30px;
+  background-color: #8C8CA5;
+}
+
+body section div .carousel-indicators .active {
   background-color: #FF4900;
+}
+
+body section .div_black1 {
+  background-color: rgba(0, 0, 0, 0.874);
+  height: 500px;
+}
+
+body section .image4 {
+  background-image: url("../../images/image Freelancing/shutterstock_672470545.PNG");
+  height: 500px;
 }
 
 @media (max-width: 991px) and (min-width: 0px) {
