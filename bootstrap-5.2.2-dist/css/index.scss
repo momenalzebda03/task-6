@@ -542,6 +542,46 @@ body section .image4 {
 }
 
 // end have
+// start blog
+body section .container .row div .card_black {
+    background-color: #111111;
+    transition: 0.3s;
+}
+
+body section .container .row div .card_black:hover {
+    background-color: $color_orange1;
+}
+
+body section .container .row div .card:hover article {
+    --hover: 1;
+}
+
+body section .container .row div .card article figure .my_image {
+    width: 105%;
+    transform:
+        translateX(calc(var(--hover) * -15%)) scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s;
+}
+
+body section .container .row div .card div div .arrow {
+    width: 2vmin;
+    height: 2vmin;
+    border-top: 1vmin solid white;
+    border-right: 1vmin solid white;
+    transition: all 200ms ease;
+
+    &.right {
+        right: 0;
+        transform: rotate(45deg);
+    }
+}
+
+body section .container .row div .card_black:hover .arrow {
+    border-color: orange;
+    box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+
+// end blog
 // start media
 @media (max-width: 991px) and (min-width: 0px) {
 
