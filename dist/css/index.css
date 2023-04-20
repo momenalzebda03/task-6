@@ -41,6 +41,10 @@ body {
   border-bottom: 2px solid #FF4900;
 }
 
+.input_color {
+  border: 2px solid rgba(238, 238, 238, 0.1647058824);
+}
+
 /* start navbar */
 body section .navbar .container .image_width {
   width: 140px;
@@ -507,6 +511,47 @@ body section .container .row div .card_black:hover .arrow {
   box-shadow: 0.5vmin -0.5vmin 0 white;
 }
 
+body .section_color {
+  background-color: #060606;
+}
+
+body section .container .row div a .icon_border {
+  transition: 0.3s;
+  border: 2px solid #aaa;
+}
+
+body section .container .row div a .icon_border:hover {
+  background-color: #aaa;
+}
+
+body section .container .row div a {
+  width: 240px;
+}
+
+body section .container .row div form textarea {
+  resize: none;
+}
+
+body section div .div_style {
+  background-color: #FF4900;
+  margin-left: -24px;
+  width: 45%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+body section div .div_margin {
+  margin-left: 130px;
+}
+
+body section div .div_style a .link_hover {
+  color: white;
+  transition: 0.3s;
+}
+
+body section div .div_style a .link_hover:hover {
+  color: blue;
+}
+
 @media (max-width: 991px) and (min-width: 0px) {
   body section div .div_image,
   body section .container .row div div .div_about {
@@ -525,6 +570,17 @@ body section .container .row div .card_black:hover .arrow {
     font-size: 40px;
   }
   body section .container .row div .div_image_about .div_white .div_backgorund {
+    margin-left: 0px;
+  }
+  body section .container .row div .a_width {
+    width: 100%;
+  }
+  body section div .div_style {
+    margin-left: 0px;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+  }
+  body section div .div_margin {
     margin-left: 0px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -44,6 +44,10 @@ body {
     border-bottom: 2px solid $color_orange1;
 }
 
+.input_color {
+    border: 2px solid #eeeeee2a;
+}
+
 // end evre
 
 /* start navbar */
@@ -582,6 +586,49 @@ body section .container .row div .card_black:hover .arrow {
 }
 
 // end blog
+// start footer
+body .section_color {
+    background-color: $color_footer;
+}
+
+body section .container .row div a .icon_border {
+    transition: 0.3s;
+    border: 2px solid #aaa;
+}
+
+body section .container .row div a .icon_border:hover {
+    background-color: #aaa;
+}
+
+body section .container .row div a {
+    width: 240px;
+}
+
+body section .container .row div form textarea {
+    resize: none;
+}
+
+body section div .div_style {
+    background-color: $color_orange1;
+    margin-left: -24px;
+    width: 45%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+body section div .div_margin {
+    margin-left: 130px;
+}
+
+body section div .div_style a .link_hover {
+    color: white;
+    transition: 0.3s;
+}
+
+body section div .div_style a .link_hover:hover {
+    color: blue;
+}
+
+// end footer
 // start media
 @media (max-width: 991px) and (min-width: 0px) {
 
@@ -606,6 +653,20 @@ body section .container .row div .card_black:hover .arrow {
     }
 
     body section .container .row div .div_image_about .div_white .div_backgorund {
+        margin-left: 0px;
+    }
+
+    body section .container .row div .a_width {
+        width: 100%;
+    }
+
+    body section div .div_style {
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    body section div .div_margin {
         margin-left: 0px;
     }
 }
